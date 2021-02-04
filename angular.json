@@ -142,7 +142,7 @@
               "projects/ui-jar/src/assets"
             ],
             "styles": [
-              "projects/ui-jar/src/styles.scss"
+              "projects/ui-jar/src/styles.css"
             ],
             "scripts": []
           },

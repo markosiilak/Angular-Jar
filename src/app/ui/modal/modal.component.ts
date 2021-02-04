@@ -1,15 +1,16 @@
 import { Component, OnInit, HostBinding, Input } from '@angular/core';
 
 /**
- * @group Component
+ * @group Layout
  * @component Card
+ * @description Lorem ipsum dolor sit amet, consectetur adipiscing elit.
  */
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+  selector: 'app-modal',
+  templateUrl: './modal.component.html',
+  styleUrls: ['./modal.component.css']
 })
-export class CardComponent implements OnInit {
+export class ModalComponent implements OnInit {
   @HostBinding('class.padding') hasPadding: boolean = false;
 
   /**
@@ -17,7 +18,7 @@ export class CardComponent implements OnInit {
    */
   @Input()
   set padding(value) {
-    this.hasPadding = value === true;
+    this.hasPadding = value === true ? true : false;
   }
 
   constructor() { }

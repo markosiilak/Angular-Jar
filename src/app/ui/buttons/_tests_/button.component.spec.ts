@@ -43,7 +43,7 @@ describe('Buttons', () => {
 });
 
 @Component({
-  selector: 'x-button-test-host',
+  selector: 'app-button-test-host',
   template: `
     <button primary>Primary</button>
     <button secondary>Secondary</button>
