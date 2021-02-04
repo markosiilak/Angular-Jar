@@ -11,14 +11,14 @@ import { Component, OnInit, HostBinding, Input } from '@angular/core';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
-  @HostBinding('class.padding') hasPadding: boolean = false;
+  @HostBinding('class.padding') hasPadding = false;
 
   /**
    * Enable/disable padding on card, default is false
    */
   @Input()
   set padding(value) {
-    this.hasPadding = value === true ? true : false;
+    this.hasPadding = value === true;
   }
 
   constructor() { }

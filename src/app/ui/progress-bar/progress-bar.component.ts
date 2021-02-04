@@ -13,7 +13,7 @@ export class ProgressBarComponent {
   /**
    * Type of progress bar
    */
-  @Input() type: ProgressBarType = "indefinite";
+  @Input() type: ProgressBarType = 'indefinite';
   private _value: string;
 
   /**
@@ -21,11 +21,11 @@ export class ProgressBarComponent {
    */
   @Input()
   set value(value: number) {
-    this._value = value +'%';
+    this._value = value + '%';
   }
   get value() {
     return parseFloat(this._value.split('%')[0]);
   }
 }
 
-type ProgressBarType = "indefinite" | "definite";
+type ProgressBarType = 'indefinite' | 'definite';

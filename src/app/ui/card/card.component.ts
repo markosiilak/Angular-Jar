@@ -10,7 +10,7 @@ import { Component, OnInit, HostBinding, Input } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  @HostBinding('class.padding') hasPadding: boolean = false;
+  @HostBinding('class.padding') hasPadding = false;
 
   /**
    * Enable/disable padding on card, default is false

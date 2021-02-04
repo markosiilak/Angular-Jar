@@ -24,7 +24,7 @@ describe('ModalComponent', () => {
     fixture.detectChanges();
   });
 
-  /** @uijarexample Modal with padding */
+  /** @uijarexample Modal component */
   it('should be created and set padding to "true"', () => {
     component.padding = true;
     component.text = 'Lorem ipsum dolor sit amet...';
@@ -33,7 +33,7 @@ describe('ModalComponent', () => {
     expect(fixture.debugElement.query(By.directive(ModalComponent)).classes.padding).toBeTruthy();
   });
 
-  /** @uijarexample Card without padding */
+  /** @uijarexample Modal with footer */
   it('should be created and set padding to "false"', () => {
     component.padding = false;
     component.text = 'Lorem ipsum dolor sit amet...';
