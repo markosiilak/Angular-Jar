@@ -21,37 +21,9 @@ body {
   margin: 0;
 }
 
-pre {
-  &::-webkit-scrollbar {
-    height: 6px;
-    width: 6px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: #cecece;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $main-color-light;
-  }
-}
-
 nav {
-  &::-webkit-scrollbar {
-    height: 6px;
-    width: 6px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: #cecece;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $main-color-light;
-  }
-
   position: absolute;
-  top: 50px;
+  top: 0;
   bottom: 0;
   width: 300px;
   overflow-y: scroll;
@@ -94,21 +66,8 @@ nav {
 }
 
 main {
-  &::-webkit-scrollbar {
-    height: 6px;
-    width: 6px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: #cecece;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $main-color-light;
-  }
-
   position: absolute;
-  top: 50px;
+  top: 0;
   bottom: 0;
   left: 300px;
   width: calc(100% - 300px);
@@ -116,6 +75,7 @@ main {
 }
 
 .top-nav-bar {
+  display: none;
   position: relative;
   z-index: 1000;
   background-color: $main-color-light;
@@ -513,7 +473,7 @@ ui-jar-introduction {
   .container {
     > nav {
       position: fixed;
-      top: 50px;
+      top: 0;
       bottom: 0;
       z-index: 900;
       transform: translateX(-100%);
