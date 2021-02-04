@@ -10,7 +10,7 @@ describe('CardComponent', () => {
 
   beforeEach(async(() => {
     /**
-     * @uijar ModalComponent
+     * @uijar CardComponent
      * @hostcomponent CardComponentTestHost
      */
     TestBed.configureTestingModule({
